@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Equipment Dashboard</h1>
+
+    <div id="equipment-section">
+        <h2>Equipment List</h2>
+        <ul id="equipment-list"></ul>
+        <input type="text" id="equipment-name" placeholder="New Equipment Name">
+        <button onclick="addEquipment()">Add Equipment</button>
+    </div>
+
+    <div id="task-section">
+        <h2>Tasks for Equipment</h2>
+        <ul id="task-list"></ul>
+        <input type="text" id="task-desc" placeholder="New Task Description">
+        <select id="task-equipment"></select>
+        <button onclick="addTask()">Add Task</button>
+    </div>
+
+    <div id="record-section">
+        <h2>Equipment Records</h2>
+        <ul id="record-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
