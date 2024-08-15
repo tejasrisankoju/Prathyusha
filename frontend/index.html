@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preventive Maintenance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Preventive Maintenance</h1>
+
+    <div id="search-section">
+        <input type="text" id="equipment-search" placeholder="Enter Equipment ID">
+        <button onclick="searchEquipment()">Search</button>
+    </div>
+
+    <script>
+        function searchEquipment() {
+            const searchId = document.getElementById('equipment-search').value.trim();
+            if (searchId) {
+                // Redirect to the equipment details page
+                window.location.href = `equipment.html?id=${searchId}`;
+            } else {
+                alert('Please enter a valid Equipment ID');
+            }
+        }
+    </script>
+</body>
+</html>
